@@ -4,7 +4,7 @@ public class Main {
 
         MinhaData hoje;
 
-        hoje = new MinhaData(23, 02, 2018);
+        hoje = new MinhaData(31, 02, 2018);
 
         System.out.println("Hoje no Brasil.: " + hoje.dataBrazil());
         System.out.println("Hoje nos EUA...: " + hoje.dataUS());
