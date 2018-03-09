@@ -8,14 +8,6 @@ public class Calculadora {
 
     private int memory;
 
-    public Calculadora() {
-        memory = 0;
-    }
-
-    public void limparMemoria(){
-        memory = 0;
-    }
-
     public int calcular(int operando, char operador){
         switch (operador){
             case OPERADOR_SOMA:
@@ -31,6 +23,14 @@ public class Calculadora {
                 memory = divisao(operando);
         }
         return memory;
+    }
+
+    public Calculadora() {
+        memory = 0;
+    }
+
+    public void limparMemoria(){
+        memory = 0;
     }
 
     private int soma(int n){

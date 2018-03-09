@@ -6,7 +6,7 @@ import javax.swing.*;
 public class Main {
 
     public static void main(String[] args) {
-        int i;
+/*        int i;
         Funcionario funcionario;
 
         for(i=0; i<10; i++){
@@ -17,7 +17,26 @@ public class Main {
 
             JOptionPane.showMessageDialog(null, funcionario.toString());
 
-        }
+        }*/
+
+        /*
+        Main obj;
+        obj = new Main();
+        obj.python();
+        */
+
+        /*
+        python();
+        */
+    }
+
+    /*
+    public void python(){
+        System.out.println("Não faço nada!");
+    }*/
+
+    public static void python(){
+        System.out.println("Não faço nada!");
     }
 
 }
