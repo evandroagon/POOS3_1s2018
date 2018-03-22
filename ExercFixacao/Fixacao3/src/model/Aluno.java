@@ -11,7 +11,7 @@ public class Aluno {
     private final double PESO_PJ = 0.30;
 
     private String nome;
-    private int prontuario;
+    private int prontuario;t
     private double prova1;
     private double prova2;
     private double exercicios;
