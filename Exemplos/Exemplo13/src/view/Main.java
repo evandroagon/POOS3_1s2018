@@ -2,12 +2,13 @@ package view;
 
 import fila.Fila;
 import fila.FilaDinamica;
+import fila.FilaEstatica;
 import model.Livro;
 
 public class Main {
 
     public static void main(String[] args) {
-        FilaDinamica<Livro> queue = new FilaDinamica<Livro>();
+        FilaEstatica<Livro> queue = new FilaEstatica<>();
 
         queue.enqueue(new Livro(1));
         queue.enqueue(new Livro(2));

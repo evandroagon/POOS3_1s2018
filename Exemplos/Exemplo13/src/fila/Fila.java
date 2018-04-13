@@ -7,7 +7,7 @@ public interface Fila<T> {
      * @param elemento
      * @return
      */
-    boolean enqueue(T elemento);
+    public boolean enqueue(T elemento);
 
     /**
      * Remove o primeiro elemento da fila e o retorna.

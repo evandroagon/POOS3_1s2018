@@ -1,6 +1,8 @@
 package fila;
 
-public class FilaEstatica<T> implements Fila<T> {
+import model.FilaComPrioridade;
+
+public class FilaEstatica<T> implements Fila<T>, FilaComPrioridade {
 
     private Object elementos[];
     private int maximo;
@@ -47,7 +49,7 @@ public class FilaEstatica<T> implements Fila<T> {
         T objeto = null;
         if(!isEmpty()){
             objeto = (T)elementos[0];
-            for(int i=1; i<=tamanhoAtual; i++){
+            for(int i=1; i<tamanhoAtual; i++){
                 elementos[i-1] = elementos[i];
             }
             tamanhoAtual-=1;
@@ -63,5 +65,10 @@ public class FilaEstatica<T> implements Fila<T> {
     @Override
     public boolean isFull() {
         return tamanhoAtual == maximo;
+    }
+
+    @Override
+    public Object dequeuePrioritario() {
+        return null;
     }
 }
